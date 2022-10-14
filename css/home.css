@@ -1,0 +1,291 @@
+body {
+    background-color: #7d5007;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    font-family: 'Reem Kufi Ink', sans-serif;
+    transition: 1s;
+    color: white;
+}
+
+.top-menu {
+    /* position: absolute; */
+    margin-left: 36%;
+    width: 45%;
+    height: 50px;
+    color: #d49024;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.top-menu-option {
+    transition: 0.5s;
+    float: left;
+    margin-left: 90px;
+}
+
+.top-menu-option:hover {
+    transition: 0.5s;
+    color: #b37110;
+    transform: scale(1.2);
+}
+
+.top-menu-header {
+    font-size: 20px;
+    position: absolute;
+    margin-left: -200px;
+}
+
+.me-time {
+    height: 500px;
+}
+
+.me-time-text {
+    position: absolute;
+    font-size: 40px;
+    margin-left: 20%;
+    color: #d49024;
+    margin-top: 150px;
+}
+
+.me-time-button {
+    position: relative;
+    width: 175px;
+    height: 45px;
+    margin-left: 385px;
+    margin-top: 360px;
+    border: 3px solid #d49024;
+    background: transparent;
+    color: #d49024;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.me-time-button:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.main-info {
+    height: 700px;
+}
+
+.main-info-text {
+    position: absolute;
+    font-size: 25px;
+    margin-left: 20%;
+    color: white;
+    margin-top: 150px;
+}
+
+.main-info-text-info {
+    width: 70vh;
+    position: absolute;
+    font-size: 20px;
+    margin-left: 20%;
+    color: white;
+    margin-top: 300px;
+}
+
+.main-info-progressbars {
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 300px;
+    width: 450px;
+    height: 300px;
+    transition: 0.5s;
+}
+
+.main-progressbar {
+    width: 400px;
+    height: 15px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 55px;
+    transition: 0.5s;
+}
+
+.main-inner-progressbar {
+    height: 15px;
+    background-color: #d49024;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.main-info-progressbars-text {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    margin-left: 61.3%;
+    margin-top: 320px;
+}
+
+.top-menu-settings {
+    position: absolute; 
+    right: 30px;
+    top: 10px; 
+    font-size: 20px; 
+    transition: 0.5s;
+}
+
+.top-menu-settings:hover {
+    transition: 0.5s;
+    transform: scale(1.3);
+}
+
+.settings {
+    position: absolute;
+    width: 50vh;
+    height: 60vh;
+    background-color: #d49024;
+    border-radius: 10px;
+    right: 10px;
+    transition: 0.5;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.settings-titles {
+    position: sticky;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.settings-items {
+    width: 30%;
+    margin-left: 10%;
+    height: 3vh;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    margin-top: 1vh;
+    float: left;
+}
+
+.settings-items-options {
+    width: 40%;
+    margin-left: 10%;
+    height: 3vh;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    margin-top: 1vh;
+    float: left;
+}
+
+input[type = "text"] {
+    width: 100%;
+    height: 3vh;
+    color: white;
+    background-color: #d49024;
+    outline: none;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.settings-info-text {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 20px;
+    color: white;
+}
+
+#myBtn {
+    display: block; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #d49024; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    transition: 0.5s;
+    opacity: 0;
+}
+  
+#myBtn:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.reserved-rights {
+    position: relative;
+    width: 99%;
+    height: 60px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    bottom: 0;
+}
+
+#kris {
+    transition: 0.15s;
+}
+
+.mywork-dropdown-menu {
+    margin-left: 42%;
+    position: absolute;
+    width: 16.5vh;
+    height: 10vh;
+    background-color: #d49024;
+    border-radius: 10px;
+    transition: 0.3s;
+    display: none;
+    margin-top: -1.5vh;
+    transition: 0.5s;
+}
+
+.mywork-item {
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 1vh;
+    transition: 0.5s;
+}
+
+.mywork-item:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.my-links {
+    color: white;
+    text-align: center;
+    width: 30vh;
+    word-spacing: 2px;
+    height: 20px;
+    float: none;
+    margin-left: 43%;
+}
+
+.about-me {
+    position: absolute;
+    width: 35vh;
+    height: 35vh;
+    margin-left: 45vh;
+    margin-top: 2vh;
+}
+
+.details {
+    position: absolute;
+    width: 35vh;
+    height: 35vh;
+    margin-left: 125vh;
+    margin-top: 2vh;
+}

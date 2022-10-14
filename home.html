@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>MySite</title>
+    <link rel = "stylesheet" href="./css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
+  </head>
+  <body onload="startTime()">
+    <div class = "top-menu">
+      <div class = "top-menu-header" id = "kris" onmouseover = "ChangePosition()" onclick = "DoSomethingCool()"><i>KRIS.</i></div>
+      <div class = "top-menu-option" id = "home-page">Home</div>
+      <!-- <div class = "top-menu-option" id = "my-work" onmouseover = "OpenDropDownMenu()" onmouseleave = "CloseDropDownMenu()">My Work</div> -->
+      <div class = "top-menu-option" id = "my-work">My Work</div>
+      <div class = "top-menu-option" id = "about-page">About</div>
+      <div class = "top-menu-settings" onclick = "ToggleSettings()"><i class="fa-solid fa-gear"></i></div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+    <!-- <div class = "mywork-dropdown-menu" id = "mywork-dropdown-menu" onmouseover = "ChangeOpacity(true)" onmouseleave = "ChangeOpacity(false)">
+      <div class = "mywork-item" onclick = "OpenLink('https://github.com/KrisDevBG/IT-Career/tree/main/C%23/Competitions/National%20C%23%20Competition%20Bulgaria%202022')">C# Winner</div><hr style="width: 90%;">
+      <div class = "mywork-item" onclick = "OpenLink('https://github.com/KrisDevBG')">GitHub Work</div>
+    </div> -->
+    <div class = "settings" id = "settings">
+      <div class = "settings-titles">Color Settings</div>
+      <div class = "settings-items">Background: </div>
+      <div class = "settings-items-options"><input onkeyup = "CheckShit('bcolor')" type="text" id="bcolor" name="bcolor"></div>
+      <div class = "settings-items">Settings: </div>
+      <div class = "settings-items-options"><input onkeyup = "CheckShit('bscolor')" type="text" id="bscolor" name="bscolor"></div>
+      <div class = "settings-items">Text: </div>
+      <div class = "settings-items-options"><input onkeyup = "CheckShit('tcolor')" type="text" id="tcolor" name="tcolor"></div>
+      <div class = "settings-items">Porgress: </div>      
+      <div class = "settings-items-options"><input onkeyup = "CheckShit('pcolor')"  type="text" id="pcolor" name="pcolor"></div>
+      <div class = "settings-titles" style = "margin-top: 18vh!important;">Progress Settings</div>
+      <div class = "settings-items">C# Percentage: </div>      
+      <div class = "settings-items-options"><input onkeyup = "CheckShit('fperc')"  type="text" id="fperc" name="fperc"></div>
+      <div class = "settings-items">JS Percentage: </div>     
+      <div class = "settings-items-options"><input onkeyup = "CheckShit('sperc')" type="text" id="sperc" name="sperc"></div>
+      <div class = "settings-items">Front-End: </div>      
+      <div class = "settings-items-options"><input onkeyup = "CheckShit('tperc')" type="text" id="tperc" name="tperc"></div>
+      <br><br><br><br><br><br><div class = "settings-info-text">If you are wondering, why you can change these settings, it's because it gives the site a little bit more personality, as you can change almost everything to your liking. Click 'Kris.' for a secret ;P</div>
+    </div>
+    <div class = "me-time">
+      <p class = "me-time-text"><font color = "white">Hi There, I Am Kris</font><br>A Full-Stack Developer</p>
+      <button class = "me-time-button" id = "my-work-button">View My Work</button>
+    </div>
+    <div class = "main-info">
+      <p class = "main-info-text">I'm a passionate learning developer, focused on web developing.<br>I am currently learning mainly JS combined with other languages.</p>
+      <div class = "main-info-text-info">Currently I am taking a Javascript Fundamentals Course at SoftUni, which will continue until the end of this year. After that with the new year comming, I will begin the next course of the path - JS Advanced, for 16 weeks. Also I am studying OOP, MySQL, Software Engineering, Fundamentals in Mathematics, Embedded Systems Programming, Operation Systems.</div>
+      <div class = "main-info-progressbars">
+        <div class = "main-progressbar"><div class = "main-inner-progressbar" id = "main-inner-progressbar-f" style="width: 85%;"></div></div>
+        <div class = "main-progressbar"><div class = "main-inner-progressbar" id = "main-inner-progressbar-s" style="width: 60%;"></div></div>
+        <div class = "main-progressbar"><div class = "main-inner-progressbar" id = "main-inner-progressbar-t" style="width: 70%;"></div></div>
+      </div>
+      <div class = "main-info-progressbars-text">C#</div>
+      <div class = "main-info-progressbars-text" id = "main-inner-progressbar-f-t" style = "margin-left: 80%; transition: 0.5s;">80%</div>
+      <div class = "main-info-progressbars-text" style="margin-top: 390px;">JS</div>
+      <div class = "main-info-progressbars-text" id = "main-inner-progressbar-s-t" style="margin-top: 390px; margin-left: 80%; transition: 0.5s;">60%</div>
+      <div class = "main-info-progressbars-text" style="margin-top: 460px;">Front-End</div>
+      <div class = "main-info-progressbars-text" id = "main-inner-progressbar-t-t" style="margin-top: 460px; margin-left: 80%; transition: 0.5s;">70%</div>
+    </div>
+    <div class = "reserved-rights">© All rights reserved. Kristiyan Petsanov <div id = "clock">12 October 21:05</div></div>
+    <div class = "my-links">
+      <div onclick = "OpenLink('https://github.com/KrisDevBG')" style = "float: left;"><i class="fa-brands fa-github"></i> GitHub</div><div onclick = "OpenLink('https://www.linkedin.com/in/kristiyan-petsanov-82ba23252/')" style = "float: left; margin-left: 1vh;"><i class="fa-brands fa-linkedin"></i> LinkedIn</div><div onclick = "OpenLink('https://www.instagram.com/kristiqnpetsanov/')" style = "float: left; margin-left: 1vh;"><i class="fa-brands fa-instagram"></i> Instagram</div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
