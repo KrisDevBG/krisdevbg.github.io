@@ -4,11 +4,11 @@ document.getElementById("my-work").addEventListener("click", function() {
 
 document.getElementById("home-page").addEventListener("click", function() {
     console.log("vlizam");
-    window.location.replace("../MySite/home.html");
+    window.location.replace("../index.html");
 });
 
 document.getElementById("about-page").addEventListener("click", function() {
-    window.location.replace("../MySite/about.html");
+    window.location.replace("../about.html");
 });
 
 function OpenLink(link) {

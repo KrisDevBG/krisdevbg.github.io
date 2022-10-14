@@ -7,11 +7,11 @@ document.getElementById("my-work-button").addEventListener("click", function() {
 });
 
 document.getElementById("home-page").addEventListener("click", function() {
-    window.location.replace("../MySite/home.html");
+    window.location.replace("../index.html");
 });
 
 document.getElementById("about-page").addEventListener("click", function() {
-    window.location.replace("../MySite/about.html");
+    window.location.replace("../about.html");
 });
 
 function OpenLink(link) {
